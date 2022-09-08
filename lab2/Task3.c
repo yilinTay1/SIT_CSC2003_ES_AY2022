@@ -83,17 +83,6 @@ int main(void)
             // LED2(Green)
             GPIO_setOutputHighOnPin(GPIO_PORT_P2, GPIO_PIN1);
 
-            // LED1(Red) → LED2(Red)
-                       GPIO_setOutputHighOnPin(GPIO_PORT_P1, GPIO_PIN0);
-                       /* Delay Loop */
-                       for(ii=0;ii<10000;ii++)
-                       {
-                       }
-                       GPIO_setOutputLowOnPin(GPIO_PORT_P1, GPIO_PIN0);
-                       /* Delay Loop */
-                       for(ii=0;ii<10000;ii++)
-                       {
-                       }
         }
 
         //S2 is pressed the blue RGB LED
@@ -101,41 +90,30 @@ int main(void)
             // LED2(Red)
             GPIO_setOutputHighOnPin(GPIO_PORT_P2, GPIO_PIN2);
 
-            // LED1(Red) → LED2(Red)
-                       GPIO_setOutputHighOnPin(GPIO_PORT_P1, GPIO_PIN0);
-                       /* Delay Loop */
-                       for(ii=0;ii<10000;ii++)
-                       {
-                       }
-                       GPIO_setOutputLowOnPin(GPIO_PORT_P1, GPIO_PIN0);
-                       /* Delay Loop */
-                       for(ii=0;ii<10000;ii++)
-                       {
-                       }
         }
-        else{
+
             // LED1(Red) → LED2(Red)
             GPIO_setOutputHighOnPin(GPIO_PORT_P1, GPIO_PIN0);
             /* Delay Loop */
-            for(ii=0;ii<10000;ii++)
+            for(ii=0;ii<50000;ii++)
             {
             }
             GPIO_setOutputLowOnPin(GPIO_PORT_P1, GPIO_PIN0);
             /* Delay Loop */
-            for(ii=0;ii<10000;ii++)
+            for(ii=0;ii<50000;ii++)
             {
             }
 
             // LED2(Red)
             GPIO_setOutputHighOnPin(GPIO_PORT_P2, GPIO_PIN0);
             /* Delay Loop */
-            for(ii=0;ii<10000;ii++)
+            for(ii=0;ii<50000;ii++)
             {
             }
             GPIO_setOutputLowOnPin(GPIO_PORT_P2, GPIO_PIN0);
             GPIO_setOutputLowOnPin(GPIO_PORT_P2, GPIO_PIN2);
             GPIO_setOutputLowOnPin(GPIO_PORT_P2, GPIO_PIN1);
-        }
+
     }
 
 }
