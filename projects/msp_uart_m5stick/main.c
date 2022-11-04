@@ -4,9 +4,9 @@
  *             -----------------
  *            |                 |
  *            |                 |
- *       RST -|     P3.3/UCA0TXD|----> M5Stick (G32)
+ *       RST -|     P3.3/UCA0TXD|----> M5Stick (G33)
  *            |                 |
- *            |     P3.2/UCA0RXD|<---- M5stick (G33)
+ *            |     P3.2/UCA0RXD|<---- M5stick (G32)
  *            |                 |
  *
  *******************************************************************************/
@@ -41,7 +41,7 @@ const Timer_A_UpModeConfig upConfig =
     {
         TIMER_A_CLOCKSOURCE_ACLK,           // ACLK Clock Source 32.768 Khz
         TIMER_A_CLOCKSOURCE_DIVIDER_32,     // 32.768 Khz / 32 = 1024
-        1000,                               // (1/1024) * 1000 = ~1s
+        1024,                               // (1/1024) * 1024 = 1s
         TIMER_A_TAIE_INTERRUPT_DISABLE,     // Disable Timer interrupt
         TIMER_A_CCIE_CCR0_INTERRUPT_ENABLE, // Enable CCR0 interrupt
         TIMER_A_DO_CLEAR                    // Clear value
