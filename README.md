@@ -16,6 +16,10 @@ Send data from `MSP` to `m5stickc plus` and to `MQTT client`.
 
 `TimerA` is created to send data to m5stick at 1s interval.
 
+Received data from `m5stickc plus` to `MSP` with `MQTT client`
+
+`EUSCIA2 ISR` is used to handle UART A2 interrupt
+
 ### pico_uart_m5stick
 
 Send data from `pico` to `m5stickc plus` and to `MQTT client`.
